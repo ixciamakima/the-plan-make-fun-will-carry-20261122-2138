@@ -27,12 +27,19 @@ const PLAN_TEXT: string = BEATS.join(" ");
 
 // Sanity guard: the bounty caps the entry at 280 characters, and our
 // designed length is 276. Refuse to emit anything else.
-const lengthInCodePoints: number = [...PLAN_TEXT].length;
-if (lengthInCodePoints !== 276 || lengthInCodePoints > 280) {
-  throw new Error(
-    `plan text must be exactly 276 characters, got ${lengthInCodePoints}`,
-  );
+function validatePlanText(text: string): void {
+  const lengthInCodePoints: number = [...text].length;
+  if (lengthInCodePoints !== 276 || lengthInCodePoints > 280) {
+    throw new Error(
+      `plan text must be exactly 276 characters, got ${lengthInCodePoints}`,
+    );
+  }
+  if (BEATS.length !== 5) {
+    throw new Error(`plan must have exactly 5 beats, got ${BEATS.length}`);
+  }
 }
+
+validatePlanText(PLAN_TEXT);
 
 function main(): void {
   const outputDir: string =

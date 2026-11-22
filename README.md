@@ -16,6 +16,7 @@ Sell one $19 CSV cleaner to Etsy sellers on Gumroad — demand proven on day 1, 
 - **It works today.** Gumroad handles payment, a $12 domain is the only spend, and the agent can do every step itself.
 - **It has a kill rule.** Zero sales by day 7 means kill it and pivot — no sunk-cost drift, which is where most plans bleed the $100 away.
 - **Honest numbers.** Expected ~2 sales a day, ~$900 by day 30 — an expected value, not a best case.
+- **The judge reads one text.** The whole entry is the 276 characters `main.ts` emits — no appendix, no hedging, every word earning its place.
 
 ## How it runs
 
